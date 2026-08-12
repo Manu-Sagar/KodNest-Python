@@ -1,0 +1,16 @@
+sentence=input("Enter One Sentence:")
+
+cleaned_sentence=sentence.strip()
+normalized_sentence=cleaned_sentence.lower()
+normalized_sentence=normalized_sentence.replace(".","")
+words=normalized_sentence.split()
+slug="-".join(words)
+uppercase_sentence=normalized_sentence.upper()
+index=normalized_sentence.find("python")
+
+print(f"Cleaned: {cleaned_sentence}")
+print(f"Normalized: {normalized_sentence}")
+print(f"Words: {words}")
+print(f"Slug: {slug}")
+print(f"Uppercase: {uppercase_sentence}")
+print(f"Python Position: {index}")
